@@ -1,0 +1,103 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.2s ease;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+button,
+input {
+  border: 0;
+  outline: 0;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: rgb(246, 248, 252);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 1rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo i {
+  cursor: pointer;
+  font-size: 24px;
+  color: #000;
+}
+.search {
+  flex: 0.5;
+}
+
+.search form {
+  position: relative;
+}
+.search form button {
+  position: absolute;
+  top: 12px;
+  left: 10px;
+}
+.search form input {
+  line-height: 40px;
+  padding: 0 2rem;
+  width: 100%;
+  background-color: rgb(234, 241, 251);
+  border-radius: 1.5rem;
+}
+
+.search form input:focus {
+    background-color: #fff;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, .6);
+}
+
+.header-buttons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-buttons i {
+  display: flex;
+  font-size: 18px;
+}
+
+.header-buttons a {
+  color: #111;
+}
+
+.header-buttons img {
+  border-radius: 50%;
+  cursor: pointer;
+  max-width: 50px;
+}
+
+
+@media only screen and (max-width: 42.5rem) {
+    .header-buttons {
+        display: none;
+    }
+    .search {
+        flex: 1;
+    }
+}
